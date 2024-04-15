@@ -1,0 +1,41 @@
+.form {
+
+	&__input {
+		height: 50px;
+		padding: 12px;
+		background-color: rgb(255, 255, 255, .2);
+		color: $white;
+		text-align: center;
+		font-size: 14px;
+		line-height: 1.9;
+		transition: background-color 0.2s ease-in;
+
+		&::placeholder {
+			color: $placeholder;
+		}
+
+		&:focus {
+			background-color: rgb(255, 255, 255, .25);
+		}
+	}
+	&__privacy {
+		text-align: center;
+		font-size: 13px;
+		line-height: 1.2;
+		color: $muted;
+	}
+	
+	&__btn {
+		height: 50px;
+		padding: 12px;
+		background-color: $accent;
+		text-align: center;
+		font-weight: 700;
+		line-height: 1.7;
+		transition: background-color 0.2s ease-in;
+
+		&:hover {
+			background-color: darken($accent, 5%);
+		}
+	}
+}

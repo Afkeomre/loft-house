@@ -1,0 +1,42 @@
+.footer {
+	padding: 72px 0 51px;
+	background-color: $footer-bg;
+	font-size: 14px;
+	letter-spacing: .05em;
+
+	@include mediaTablet {
+		padding: 40px 0 32px;
+		font-size: 12px;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+
+		@include mediaTablet {
+			grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+			row-gap: 50px;
+		}
+	}
+	
+	&__logo {
+		margin-top: -12px;
+	}
+
+	&__nav-list,
+	&__address-list {
+		display: grid;
+		gap: 15px;
+	}
+
+	&__address-list {
+		margin-bottom: 20px;
+	}
+
+	&__address-socials {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+	}
+}

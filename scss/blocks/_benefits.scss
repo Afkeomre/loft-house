@@ -1,0 +1,61 @@
+.benefits {
+	position: relative;
+	padding: 120px 0;
+	overflow: hidden;
+
+	@include mediaTablet {
+		padding: 80px 0;
+	}
+
+	&::after {
+		content: 'II';
+		left: calc(50% + 555px);
+		transform: translateX(-50%);
+		line-height: 1.2;
+
+		@include decorNumber;
+
+		@include mediaTablet {
+			display: none;
+		}
+	}
+
+	&__row {
+		display: flex;
+		gap: 70px;
+
+		@include mediaTablet {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 230px);
+			justify-content: center;
+			gap: 60px;
+		}
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__item-img {
+		margin-bottom: 53px;
+
+		@include mediaTablet {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item-text {
+		font-family: $font-secondary;
+		font-size: 20px;
+		line-height: 1.35;
+		font-weight: 300;
+
+		@include mediaTablet {
+			font-size: 16px;
+		}
+	}
+}
+
+

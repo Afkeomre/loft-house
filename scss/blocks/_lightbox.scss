@@ -1,0 +1,11 @@
+#youtubelightboxPlayer {
+	@include mediaTablet {
+		width: 500px;
+		height: 294px;	
+	}
+
+	@include mediaMobile {
+		width: 258px;
+		height: 200px;	
+	}
+}
